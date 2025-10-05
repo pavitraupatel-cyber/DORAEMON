@@ -1,0 +1,316 @@
+.head{
+    border-radius: 50%;
+    border : 1px solid black;
+    height: 200px;
+    width : 224px;
+    margin-left : 50%;
+    background-color: #12a4d3;
+}
+
+.face{
+    width : 170px;
+    height : 135px;
+    border : 2px solid black;
+    background-color: white;
+    border-radius :50%;
+    position : relative;
+    left : 26px;
+    top : 50px;
+}
+
+.both-eyes {
+    display: flex;
+    margin-left: 30px;
+    transform: translateY(-20px);
+}
+.left-eye, .right-eye {
+    height: 58px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    overflow: hidden; 
+    
+}
+.left-eye-ball, .right-eye-ball {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    animation: eyeball-move 4s infinite ease-in-out;
+}
+.left-eye-ball { left: 32px; }
+.right-eye-ball { left: 8px; }
+
+
+
+@keyframes eyeball-move {
+    0%, 100% { transform: translateX(0); }   /* center */
+    25% { transform: translateX(-4px); }     /* left */
+    50% { transform: translateX(4px); }      /* right */
+    75% { transform: translateX(-2px); }     /* little cross-eye */
+}
+.nose{
+    height : 20px;
+    width : 20px;
+    border-radius : 50%;
+    border :  1px solid black;
+    background-color: rgba(165,42,42,0.952);
+    position : relative;
+    left: 70px;
+    top: -24px;
+}
+.nostril{
+    height: 55px;
+    width : 2px;
+    background-color : black;
+    position : relative;
+    left : 80px;
+    top : -24px;
+}
+.mouth {
+    height : 100px;
+    width : 130px;
+    border-bottom : 2px solid black;
+    border-radius : 50%;
+    position : relative;
+    left : 18px;
+    top : -124px;
+
+}
+.lm1{
+    height : 10px;
+    width : 40px;
+    border-top : 2px solid black;
+    position : relative;
+    left : 10px;
+    top : -180px;
+    transform : rotate(20deg);
+}
+.lm2{
+    height : 10px;
+    width : 40px;
+    border-top : 2px solid black;
+    position : relative;
+    left : 10px;
+    top : -175px;
+}
+.lm3{
+    height : 10px;
+    width : 40px;
+    border-top : 2px solid black;
+    position : relative;
+    left : 15px;
+    top : -170px;
+    transform : rotate(-20deg);
+}
+.rm1{
+    height : 10px;
+    width : 40px;
+    border-top : 2px solid black;
+    position : relative;
+    left : 117px;
+    top : -225px;
+    transform : rotate(160deg);
+
+}
+.rm2{
+    height : 10px;
+    width : 40px;
+    border-top : 2px solid black;
+    position : relative;
+    left : 120px;
+    top : -212px;
+}
+.rm3{
+    height : 10px;
+    width : 40px;
+    border-top : 2px solid black;
+    position : relative;
+    left : 120px;
+    top : -219px;
+    transform : rotate(-160deg);
+}
+.body {
+    height : 120px;
+    width : 154px;
+    border : 2px solid black;
+    background-color: #12a4d3;
+    position :relative;
+    left :765px;
+    top : -10px;
+}
+.belly{
+    height : 118px;
+    width : 118px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    position :relative;
+    top : -18px;
+    left : 17px;
+}
+.tie{
+    width : 160px;
+    height: 14px;
+    border :1px solid black;
+    background-color : #a51f02;
+    border-radius: 5px;
+    position: relative;
+    left : -5px;
+    top :-140px;
+
+
+}
+.bell{
+    height: 30px;
+    width : 30px;
+    border: 2px solid black;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    left : 60px;
+    top : 5px;
+}
+.bell-line{
+    height : 10px;
+    width : 30px;
+    border-top : 2px solid black;
+    position: relative;
+    top : 8px;
+}
+.bell-line1{
+    height : 10px;
+    width : 32px;
+    border-top : 2px solid black;
+    position: relative;
+}
+.bell-dot{
+    height: 8px;
+    width : 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    left : 11px;
+    top : -9px;
+}
+.bell-line2{
+    height: 10px;
+    width : 2px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    left : 14px;
+    top : -10px;
+}
+.pocket{
+    height: 45px;
+    width : 90px;
+    background-color:white;
+    border : 2px solid black;
+    border-radius: 0 0 45px 45px;
+    position: relative;
+    left : 12px;
+    top : 50px;
+}
+.left-arm{
+    height : 70px;
+    width : 30px;
+    border : 2px solid black;
+    transform : rotate(45deg);
+    background-color: #12a4d3;
+    position: relative;
+    right : 36px;
+    top : -142px;
+    z-index : -1;
+}
+.left-wrist{
+    height : 43px;
+    width : 43px;
+    border-radius: 45%;
+    border : 2px solid black;
+    background-color: white;
+    position: relative;
+    right : 10px;
+    top : 50px;
+}
+.right-arm{
+    height : 70px;
+    width : 30px;
+    border : 2px solid black;
+    transform : rotate(-45deg);
+    background-color: #12a4d3;
+    position: relative;
+    left : 152px;
+    top : -218px;
+    z-index : -1;
+}
+.right-wrist{
+    height : 43px;
+    width : 43px;
+    border-radius: 45%;
+    border : 2px solid black;
+    background-color: white;
+    position: relative;
+    right : 10px;
+    top : 50px;
+}
+.left-foot{
+    height : 22px;
+    width : 87px;
+    border-radius: 22px 15px 15px 10px;
+    border : 2px solid black;
+    background-color: white;
+    position: relative;
+    right : 20px;
+    top : -170px;
+}
+.right-foot{
+    height : 22px;
+    width : 87px;
+    border-radius: 22px 15px 15px 10px;
+    border : 2px solid black;
+    background-color: white;
+    position: relative;
+    left : 80px;
+    top : -195px;
+}
+.doremon{
+    position: relative;
+    left : -100px;
+    top : 150px;
+    
+    
+}
+body{
+    background-image: url('sky.jpeg');
+    background-size: cover;
+
+}
+.doremon-heading {
+    font-family: 'Comic Sans MS', 'Fredoka One', cursive;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-left : 510px;
+    margin-bottom : -30px;
+    color: #00a6e7; /* Doraemon blue */
+    -webkit-text-stroke: 4px white;  /* white outline */
+    text-shadow: 
+        5px 5px 0 #fdd835,   /* yellow shadow */
+        -5px -5px 0 #fdd835,
+        5px -5px 0 #fdd835,
+        -5px 5px 0 #fdd835;
+        display: inline-block;
+    animation: dora-bounce 2s infinite ease-in-out;
+}
+@keyframes dora-bounce {
+    0%, 100% { transform: translateY(0) scale(1); }
+    30% { transform: translateY(-20px) scale(1.1); }
+    50% { transform: translateY(10px) scale(0.9); }
+    70% { transform: translateY(-10px) scale(1.05); }
+}
